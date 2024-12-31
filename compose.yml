@@ -1,0 +1,9 @@
+
+services:  
+  web2:
+    restart: on-failure
+    build: ./index
+    hostname: web2
+    ports:
+      - '9097:8000'
+
