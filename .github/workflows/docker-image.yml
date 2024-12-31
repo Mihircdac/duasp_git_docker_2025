@@ -20,7 +20,7 @@ jobs:
         PASS: ${{ secrets.PASS }}       
       run: |     
        
-        docker build . --file Dockerfile --tag arunvel1988/duasp-ci-demo-2025:v1
+        docker build . --file Dockerfile --tag mihiraj/duasp-ci-demo-2025:v1
         docker login -u $USER -p $PASS        
-        docker push arunvel1988/duasp-ci-demo-2025:v1
+        docker push mihiraj/duasp-ci-demo-2025:v1
         cat /etc/os-release
